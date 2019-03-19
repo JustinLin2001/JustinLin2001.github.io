@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Achieving Broadband High Emissivity in the Infrared with ‘Diamond Forests’ - Da Lin
+        
+    </title>
+
+    <link rel="canonical" href="https://JustinLin2001.github.io/2019/03/19/paper/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('Demo.png')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>Achieving Broadband High Emissivity in the Infrared with ‘Diamond Forests’</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Da Lin on
+                            2019-03-19
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Da Lin</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h3><span id="achieving-broadband-high-emissivity-in-the-infrared-with-diamond-forests">Achieving Broadband High Emissivity in the Infrared with ‘Diamond Forests’</span></h3>
+<p><strong>Da Lin</strong></p>
+<p>(Affiliation): Department Name of Organization, Name of Organization, City, Country<br>
+Email: <a href="mailto:1d20010110@163.com" target="_blank" rel="noopener">1d20010110@163.com</a></p>
+<h3><span id="abstract">Abstract</span></h3>
+<p>Radiative cooling, a technology that does not require energy input, still has the effect of cooling (releasing energy). ‘Diamond forest’, the properly designed structure of Al2O3 and Ag can achieve the goal. The principle of radiative cooling is using materials with high emissivity and reflectivity so that they do not absorb radiation from the sun while releasing heat through radiating. Finite-difference time-domain (FDTD) method is used to simulate various structures of this ‘diamond forest’. The designed structure is as following. The red part including pyramid and substrate are made of Al2O3 and blue part is made of Ag. The electromagnetic waves used have wavelengths between 5 μm and 10 μm. During simulation, only one period of the ‘diamond forest’ (green part) is tested and the properties such as width, length, height are changed to identify different results. Under such circumstances, efficiency of this system is relatively high when either substrate or pyramid height is lowered.</p>
+<h3><span id="keywords">Keywords</span></h3>
+<p>Thermal dynamics, Heat transformation, Electromagnetic energy, Radiative cooling</p>
+<h3><span id="1-introduction">1. Introduction</span></h3>
+<p>Nowadays, energy shortage, pollution, and greenhouse effect have been severe problems faced by the whole world [1-2]. Air-conditioning contributes a lot to these existing problems. According to researches, ratio of refrigeration in building energy use is 10% [3]. Thus, to find a new technology with less energy input, less pollution, and less output is an urgent issue [4]. Radiative cooling, as a passive cooling technology, can be a great substitute for air-conditioners [5-9].<br>
+According to laws of thermal dynamics, heat can be transferred to objects of lower temperatures [10]. Therefore, natural cooling sources like glaciers and deep sea water can be used. However, these resources are limited, because this will also cause earth temperature to raise which cause other problems. In fact, the best source for cooling is the universe. The temperature of universe is 3 Kelvin while the earth is around 300 Kelvin. Two objects with different temperatures can exchange energy by radiation as long as the temperature difference is maintained. If heat can be transferred to universe in the form of electromagnetic waves in the infrared without extra energy consumption, cooling can be achieved [11].<br>
+Radiative cooling is a passive way that utilizes the properties of certain materials and structures that have a high value of emissivity in the infrared and high reflectivity in the visible and near infrared so that they can emit radiation while do not absorb radiation. As a result, radiative cooling is achieved [5-9]. Radiative cooling provides a way of achieving indoor thermal comfort with low or no energy consumption [5]. This technology can be an assist for air-conditioning to lower indoor temperature. Normally, such apparatuses are set on the roof of a building so that it gets the most access to the clear sky during both day and night time [12-13].<br>
+In this research, we investigated a specific radiative cooling structure, called ‘diamond forests’, which are consisted of a Al2O3 emitting pyramids and a reflective sheet of Ag. By changing geometrical the properties of the structure such as height of the substrate and height of the pyramid, it is found that the transmission of electromagnetic waves is changed. The best emissivity is achieved within our parameter space while considering the difficulty in realization of the structures.</p>
+<h3><span id="2-results-and-discussions">2. Results and Discussions</span></h3>
+<p><img src="Picture1.png" alt="BeanTech Desktop"><br>
+<strong>Figure 1.</strong> The diagram of diamond forest structure consisting of a metal reflector and oxide pyramids. The pyramids and substrate (red parts) are made of Al2O3. The bottom reflector (blue part) is made of Ag. The green part is a unit cell of the ‘diamond forest’, with a period length of 3 μm.<br>
+The ‘diamond forest’ under investigation is shown in Figure 1. It is consisted of a metal reflector and oxide pyramids. The green part represents a unit cell of the structure. Its pyramids and substrate parts are made of Al2O3 while its bottom part is made of Ag. Each period is aligned right next to each other to form a two dimensional ‘diamond forest’ structure. Due to the periodicity, only a single unit cell is simulated during the research. Furthermore, due to the symmetry in x and y direction, an input wave with x polarization is used, leading to anti-symmetric boundaries in x-direction and symmetric boundaries in y-direction. The up-most and bottom-most boundaries are set to be perfectly matched layers so that no unwanted reflection occurs. We also put two monitors to measure the reflection and absorption. They are put above the input source and below the silver sheet, respectively. Using this structure and settings, the spectrum properties of electromagnetic waves within certain wavelength range can be accurately calculated.</p>
+<p><img src="Picture2.png" alt="BeanTech Desktop"><img src="Picture3.png" alt="BeanTech Desktop"><br>
+<strong>Figure 2.</strong> Relative permittivity of Al2O3 (left) and Ag (right). Both real (blue lines) and imaginary (red lines) part of permittivity are presented.</p>
+<p><img src="Picture4.png" alt="BeanTech Desktop"><br>
+<strong>Figure 3.</strong> Absorption spectrum of the ‘diamond forest’ in the infrared.<br>
+We choose to use Al2O3 and Ag as the building blocks for our structure based on two facts. First, Al2O3 has a strong absorption in the infrared due to its resonance while absorbs little in the visible and near infrared. Second, Ag is known for its high reflection and little absorption in the entire spectrum from visible to infrared. The relative permittivity of these two materials are plotted in Figure 2 with data from [14]. It can be easily identified that the resonance peak of Al2O3 is around 13 μm. Besides, Ag possesses a very high (on the order of 102 to 103) value for its real part, indicating strong reflection. Although the resonance peak of Al2O3 is in the infrared, high reflection may occur due to its low real part (can be much lower than 1). To reduce the impedance match between air and Al2O3, the diamond pyramids plays an important role. The impedance gradually changes from the tip of the pyramids to the thick substrate, leading to strong interaction between input electromagnetic wave and the materials.<br>
+We designed a structure with sizes which can be changed in later trails. Each period is designed as following. The pyramid, substrate and bottom metal has a height of 5 μm, 10 μm and 200 nm, respectively. All of them are set to be of 3 μm wide in x and y direction. The frequency and power monitor set at the x-y plane at the top of this structure measures the reflection. Figure 3 shows a typical absorption spectrum of the structure under investigation. It is clear that when electromagnetic waves with wavelengths of 10 μm and higher reaches the structure, almost no reflection occurs and the absorption decreases almost linearly with decreasing wavelength in the range of 5 μm to 10 μm.</p>
+<p><img src="Picture5.png" alt="BeanTech Desktop"><br>
+<strong>Figure 4.</strong> The electromagnetic field distribution within a unit cell of the diamond forest under different wavelength excitations from 5 μm to 14 μm with 1 μm interval.<br>
+To further explore the details of the absorption mechanism. We plotted in Figure 4 the electromagnetic field distribution within a unit cell of the diamond forest under different wavelength excitations from 5 μm to 14 μm with 1 μm interval. For relatively short wavelength range from 5 μm to 9 μm [Figure 4(a) to (e)], the electromagnetic wave penetrates through the entire Al2O3 part and partially get reflected. The wavelength difference is discerned by the interference pattern. For 10 μm wave, the wave is able to get to the bottom of Al2O3 but due to the high absorption of Al2O3, almost no reflection could be observed, leading to high emissivity. For even longer wavelength from 11 μm to 14 μm, the absorption mainly occurs in the pyramid region due to the even higher absorption of the material. The 200 nm Ag sheet guarantees that there is no transmission through the structure.</p>
+<p><img src="Picture6.png" alt="BeanTech Desktop"><br>
+<strong>Figure 5.</strong> Absorption of electromagnetic waves into one period of diamond forest with different situations due to different wavelengths (x-y direction). Height of substrate and pyramid are represented in the graph. Other parameters are as following:<br>
+height of metal = 200 nm, period = 3 μm.<br>
+To explore the robustness of our ‘diamond forest’, we did the following. First, the metal thickness was changed from 200 nm to 1000 nm while keeping all other parameters unchanged. The absorption/emissivity of the ‘diamond forest’ remains almost the same. It can be inferred that thicker metal does not affect the overall absorption in the infrared.<br>
+Second, the period of the structure is changed from 3 μm to 5 μm while leaving all other parameters unchanged. Once again, it shows no difference with the unchanged absorption spectrum. We can deduce that change of period in the range from 3 μm to 5 μm does not affect the overall absorption of electromagnetic waves, leaving large design and fabrication space for the structure.<br>
+Third, the height of the pyramid was changed from 5 μm to 20 μm. It is shown that the overall trend of absorption does not change, which still decreases with respect to wavelength. However, the highest absorption decreases from 0.8 to 0.7 which indicates that less electromagnetic waves can be transmitted through a period with greater pyramid height. This is shown as the yellow line in Figure 5.<br>
+Finally, height of the substrate was changed from 10 μm to 40 μm. It is shown that the overall trend of absorption does not change, which still decreases with respect to wavelength. However, the lowest absorption increases from 0.2 to 0.6 which indicated that less electromagnetic waves can be transmitted through a period with greater pyramid height. Also, for higher wavelength, little absorption is shown again. This is shown as the red line in Figure 5.</p>
+<h3><span id="3-conclusions">3. Conclusions</span></h3>
+<p>In summary, we have numerically demonstrated a structure in the form of ‘diamond forest’, capable of achieving over 0.9 absorption (or equivalently emissivity) from 9 μm to 15 μm. Specifically, the emissivity approaches near unity from 10 μm to 15 μm with robust design parameters. The use of optically (visible and near infrared) transparent material (Al2O3) could potentially enable minimum absorption in the visible and near infrared where the solar flux is the strongest. The proposed structure also has a large design space, allowing fabrication errors. We anticipate the proposed ‘diamond forest’ structure will be of great importance in passive cooling applications.</p>
+<h3><span id="references">References</span></h3>
+<p>[1] Chu, Steven, and Arun Majumdar. “Opportunities and challenges for a sustainable energy future.” Nature 488, no. 7411 (2012): 294.</p>
+<p>[2]  Chu, Steven, Yi Cui, and Nian Liu. “The path towards sustainable energy.” Nature Materials 16, no. 1 (2017): 16.</p>
+<p>[3]  Kreith, Frank, Shan K. Wang, and Paul Norton. Air conditioning and refrigeration engineering. CRC Press, 2018.</p>
+<p>[4]  Conti, John, Paul Holtberg, Jim Diefenderfer, Angelina LaRose, James T. Turnure, and Lynn Westfall. International energy outlook 2016 with projections to 2040. No. DOE/EIA-0484 (2016). USDOE Energy Information Administration (EIA), Washington, DC (United States). Office of Energy Analysis, 2016.</p>
+<p>[5]  Hsu, Po-Chun, Alex Y. Song, Peter B. Catrysse, Chong Liu, Yucan Peng, Jin Xie, Shanhui Fan, and Yi Cui. “Radiative human body cooling by nanoporous polyethylene textile.” Science 353, no. 6303 (2016): 1019-1023.</p>
+<p>[6]  Hossain, Md Muntasir, and Min Gu. “Radiative cooling: principles, progress, and potentials.” Advanced Science 3, no. 7 (2016): 1500360.</p>
+<p>[7]  Gentle, A. R., and G. B. Smith. “Is enhanced radiative cooling of solar cell modules worth pursuing?.” Solar Energy Materials and Solar Cells 150 (2016):39-42.</p>
+<p>[8]  Zhai, Yao, Yaoguang Ma, Sabrina N. David, Dongliang Zhao, Runnan Lou, Gang Tan, Ronggui Yang, and Xiaobo Yin. “Scalable-manufactured randomized glass-polymer hybrid metamaterial for daytime radiative cooling.” Science 355, no. 6329 (2017): 1062-1066.</p>
+<p>[9]  Hossain, Md Muntasir, Baohua Jia, and Min Gu. “A metamaterial emitter for highly efficient radiative cooling.” Advanced Optical Materials 3, no. 8 (2015): 1047-1051.</p>
+<p>[10] Welty, James R., Gregory L. Rorrer, and David G. Foster. Fundamentals of Momentum, Heat, and Mass Transfer: International Student Version. Wiley, 2015.</p>
+<p>[11] Hanif, M., T. M. I. Mahlia, A. Zare, T. J. Saksahdan, and H. S. C. Metselaar. “Potential energy savings by radiative cooling system for a building in tropical climate.” Renewable and Sustainable Energy Reviews 32 (2014): 642-650.</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://github.com/JustinLin2001">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Da Lin 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://JustinLin2001.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://JustinLin2001.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
